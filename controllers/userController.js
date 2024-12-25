@@ -1,9 +1,9 @@
-const User = require("../models/userModel"); // Import Mongoose model
+const User = require("../models/userModel");
 
 // Get All Users
 exports.getUsers = async (req, res) => {
     try {
-        const users = await User.find(); // Fetch all users from MongoDB
+        const users = await User.find();
         res.status(200).json({ status: true, data: users });
     } catch (error) {
         res.status(500).json({ status: false, message: "Internal server error", error: error.message });
@@ -68,7 +68,7 @@ exports.updateUser = async (req, res) => {
         const updatedUser = await User.findByIdAndUpdate(
             userId,
             { first_name, last_name, email, gender, job_title },
-            { new: true, runValidators: true } // Return updated document
+            { new: true, runValidators: true }
         );
 
         if (!updatedUser) {
