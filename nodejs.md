@@ -2,12 +2,16 @@
 2:) Run command npm init
 3:) install the required dependency
 
+----Here's a list of commonly used Node.js dependencies for various types of development----
+
 -----------Web Application Development-----------
 1:) Express (express) - Lightweight and fast web framework for building APIs and web apps.
-2:) Cors (cors) - Middleware for enabling Cross-Origin Resource Sharing.
-3:) Dotenv (dotenv) - Loads environment variables from a .env file.
-4:) Body-parser (body-parser) - Middleware to parse incoming request bodies (often part of 5:) Express now).
-6:) Morgan (morgan) - HTTP request logger middleware.
+2:) Nodemon 
+3:) ejs
+4:) Cors (cors) - Middleware for enabling Cross-Origin Resource Sharing.
+5:) Dotenv (dotenv) - Loads environment variables from a .env file.
+6:) Body-parser (body-parser) - Middleware to parse incoming request bodies (often part of 5:) Express now).
+7:) Morgan (morgan) - HTTP request logger middleware.
 
 -----------Database Connectivity-----------
 1:) Mongoose (mongoose) - ODM for MongoDB.
